@@ -72,8 +72,23 @@ textarea.meterialize-textarea:focus:not([readonly]) {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center center;
   margin-top: -40px;
   color: white;
+}
+
+@media (max-width: 600px) {
+  .hero-div {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url(./img/portfolio/hero-small.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url(./img/portfolio/hero-small.jpeg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 .hero {
@@ -86,14 +101,24 @@ textarea.meterialize-textarea:focus:not([readonly]) {
 
 .head-shot-div {
   height: 100%;
+  margin-top: 40px;
 }
 
 .head-shot {
   border-radius: 50%;
 }
 
+.about {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .about-row {
   margin-bottom: 0px;
+}
+
+.portfolio.container {
+  width: 85%;
 }
 
 #contact-circle {
@@ -108,4 +133,9 @@ textarea.meterialize-textarea:focus:not([readonly]) {
 .li-icon {
   height: 30px;
   top: 33px;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
 }
