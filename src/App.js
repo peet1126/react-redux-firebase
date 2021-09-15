@@ -8,11 +8,13 @@ import SignUp from "./components/auth/SignUp";
 import CreateProject from "./components/projects/CreateProject";
 import AboutApp from "./components/pages/AboutApp";
 import Portfolio from "./components/pages/Portfolio";
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
+        <ScrollToTop />
         <div className="App">
           <Navbar />
           <Switch>

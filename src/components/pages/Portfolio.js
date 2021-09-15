@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
-import hero from "../../img/portfolio/hero.jpeg";
 import headShot from "../../img/portfolio/headShot.jpg";
 import html5 from "../../img/portfolio/html5.png";
 import css3 from "../../img/portfolio/css3.png";
@@ -20,6 +20,7 @@ import wander from "../../img/portfolio/wander.png";
 import memoryGame from "../../img/portfolio/memory-game.png";
 import li from "../../img/portfolio/li.png";
 import gitWhite from "../../img/portfolio/git-white.png";
+import resume from "../../resources/Peter_McDonald_Resume.pdf"
 
 
 const Portfolio = props => {    
@@ -108,7 +109,6 @@ const Portfolio = props => {
                         <div class="card">
                             <div class="card-image">
                                 <img src={crypto} />
-                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">visibility</i></a>
                             </div>
                             <div class="card-content">
                                 <span class="card-title">Crypto Calculator</span>
@@ -117,34 +117,35 @@ const Portfolio = props => {
                         </div>                        
                     </div>
                     <div className="col s10 m6 l3 offset-s1">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src={experimentZone} />
-                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">visibility</i></a>
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">Client's Website</span>
-                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>                        
+                        <a href="https://experimentzone.com/cro-calculator/" target="blank" rel="noreferrer noopener">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src={experimentZone} />
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Client's Website</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                            </div>                        
+                        </a>
                     </div>
                     <div className="col s10 m6 l3 offset-s1">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src={wander} />
-                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">visibility</i></a>
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">Wander</span>
-                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>                        
+                        <Link to="/">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src={wander} />
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Wander</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                            </div>                        
+                        </Link>
                     </div>
                     <div className="col s10 m6 l3 offset-s1">
                         <div class="card">
                             <div class="card-image">
                                 <img src={memoryGame} />
-                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">visibility</i></a>
                             </div>
                             <div class="card-content">
                                 <span class="card-title">Memory Game</span>
@@ -159,24 +160,24 @@ const Portfolio = props => {
                 <br />
                 <div className="row center-align">
                     <div className="col s6 m4  center-align">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red"><i id="contact-icon" class="material-icons">mail_outline</i></a>
-                        <p className="center-align">pbmcdonald7@gmail.com</p>
+                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href="mailto:pbmcdonald7@gmail.com" target="_blank"><i id="contact-icon" class="material-icons">mail_outline</i></a>
+                        <a href="mailto:pbmcdonald7@gmail.com" target="_blank" rel="noreferrer noopener"><p className="center-align">pbmcdonald7@gmail.com</p></a>
                     </div>
                     <div className="col s6 m4 center-align">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red"><i id="contact-icon" class="material-icons">phone_iphone</i></a>
-                        <p className="center-align">(512) 968-1494</p>
+                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><i id="contact-icon" class="material-icons">phone_iphone</i></a>
+                        <a href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><p className="center-align">(512) 968-1494</p></a>
                     </div>
                     <div className="col s6 m4 center-align">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red"><img class="li-icon" src={li} alt="LinkedIn Icon" /></a>
-                        <p className="center-align">View Profile</p>
+                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><img class="li-icon" src={li} alt="LinkedIn Icon" /></a>
+                        <a href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><p className="center-align">View Profile</p></a>
                     </div>
                     <div className="col s6 m4 center-align offset-m2">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red"><img class="li-icon" src={gitWhite} alt="Github Icon" /></a>
-                        <p className="center-align">View Profile</p>
+                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><img class="li-icon" src={gitWhite} alt="Github Icon" /></a>
+                        <a href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><p className="center-align">View Profile</p></a>
                     </div>
                     <div className="col s6 m4 center-align offset-s3">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red"><i id="contact-icon" class="material-icons">description</i></a>
-                        <p className="center-align">View Resume</p>
+                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href={resume} target="_blank" rel="noreferrer noopener"><i id="contact-icon" class="material-icons">description</i></a>
+                        <a href={resume} target="_blank" rel="noreferrer noopener"><p className="center-align">View Resume</p></a>
                     </div>
                 </div>
             </div>
