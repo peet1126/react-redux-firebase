@@ -9,13 +9,14 @@ import CreateProject from "./components/projects/CreateProject";
 import AboutApp from "./components/pages/AboutApp";
 import Portfolio from "./components/pages/Portfolio";
 import ScrollToTop from "./components/utils/ScrollToTop";
+import CryptoApp from "./CryptoApp";
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <ScrollToTop />
-        <div className="App">
+        <div className="app">
           <Navbar />
           <Switch>
             <Route exact path="/" component={Dashboard} />
@@ -25,6 +26,7 @@ class App extends Component {
             <Route path="/create" component={CreateProject} />
             <Route path="/about" component={AboutApp} />
             <Route path="/portfolio" component={Portfolio} />
+            <Route path="/crypto-calculator" component={CryptoApp} />
           </Switch>
         </div>
       </BrowserRouter>

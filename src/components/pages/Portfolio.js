@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"
 
+import "../../Styles/Portfolio.css"
 import headShot from "../../img/portfolio/headShot.jpg";
 import html5 from "../../img/portfolio/html5.png";
 import css3 from "../../img/portfolio/css3.png";
@@ -106,6 +107,7 @@ const Portfolio = props => {
                 <h5 className="center-align">Click on the image to demo the project.</h5>
                 <div className="card-row row">
                     <div className="col s10 m6 l3 offset-s1">
+                    <Link to="/crypto-calculator">
                         <div class="card">
                             <div class="card-image">
                                 <img src={crypto} />
@@ -115,6 +117,7 @@ const Portfolio = props => {
                                 <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                             </div>
                         </div>                        
+                    </Link>
                     </div>
                     <div className="col s10 m6 l3 offset-s1">
                         <a href="https://experimentzone.com/cro-calculator/" target="blank" rel="noreferrer noopener">
@@ -143,15 +146,17 @@ const Portfolio = props => {
                         </Link>
                     </div>
                     <div className="col s10 m6 l3 offset-s1">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src={memoryGame} />
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">Memory Game</span>
-                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>                        
+                        <a href="html/memory-game.html">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src={memoryGame} />
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Memory Game</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                            </div>                        
+                        </a>
                     </div>
                 </div>
             </div>
