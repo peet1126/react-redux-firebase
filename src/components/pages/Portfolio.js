@@ -114,7 +114,7 @@ const Portfolio = props => {
                             </div>
                             <div class="card-content">
                                 <span class="card-title">Crypto Calculator</span>
-                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <p>The Cryptocurrency Loan Calculator is a React project. Connected to a public API that collects all cryptocurrency's live values, it calculates the amount of cryptocurrency needed to use as collateral for a cash loan.</p>
                             </div>
                         </div>                        
                     </Link>
@@ -127,20 +127,20 @@ const Portfolio = props => {
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title">Client's Website</span>
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    <p>ExperimentZone.com is a client's website that I manage. This site is a fast-loading static website built with Jekyll. The website was built using a theme, but I have torn it apart and rearranged almost every theme page. The site is responsive with many custom features such as calculators. I have integrated our email marketing and meeting scheduling tools so that they work seamlessly for the team.</p>
                                 </div>
                             </div>                        
                         </a>
                     </div>
                     <div className="col s10 m6 l3 offset-s1">
-                        <Link to="/">
+                        <Link to="/about">
                             <div class="card">
                                 <div class="card-image">
                                     <img src={wander} />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title">Wander</span>
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    <p>This app is a React, Redux, and Firebase project that allows the user to create a post associated with a location on a map and share it with the other logged-in members of the app.</p>
                                 </div>
                             </div>                        
                         </Link>
@@ -153,7 +153,7 @@ const Portfolio = props => {
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title">Memory Game</span>
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    <p>This memory game is a card matching game that is built almost entirely with JavaScript. I created this project as an exercise on DOM manipulation.</p>
                                 </div>
                             </div>                        
                         </a>

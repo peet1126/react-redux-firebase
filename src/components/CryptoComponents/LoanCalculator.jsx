@@ -29,7 +29,7 @@ class LoanCalculator extends React.Component {
         const {amount, months, ltv, repayment} = this.state;
         return (
             <div className="loan-calculator">
-                <h3 className="title">CryptoCurrency Loan Calculator</h3>
+                <h3 className="title">Cryptocurrency Loan Calculator</h3>
                 <section className="calculator">
                     <CalculatorForm 
                         amount={amount} 

@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-self: center;
+  background-color: #00a7b1;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+h1 {
+  justify-self: center;
+  color: white;
+  font-weight: 300;
+}
+
+#info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  background-color: salmon;
+  padding: 5px;
+  justify-self: start;
+  border-radius: 10px;
+  margin: 0px;
+}
+
+.table {
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  height: 279px;
+  width: 175px;
+  justify-self: center;
+  list-style: none;
+  transform-style: preserve-3d;
+  transition: 0.8s ease;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.backOfCard {
+  transform: rotateY(360deg);
+}
+
+button {
+  min-width: 9em;
+  justify-self: center;
+  align-content: center;
+  background-color: salmon;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.message {
+  border: 7px solid salmon;
+  background-color: #00a7b1;
+  position: fixed;
+  width: 600px;
+  height: 300px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 300px;
+  color: white;
+  font-size: 2em;
+  top: 25%;
+  left: 27%;
+}
