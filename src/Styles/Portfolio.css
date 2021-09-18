@@ -60,6 +60,11 @@
 
 .portfolio.container {
   width: 85%;
+  padding-top: 20px;
+}
+
+.portfolio h5 {
+  margin-bottom: 30px;
 }
 
 #contact-circle {
@@ -83,4 +88,26 @@
 
 a {
   color: rgba(0, 0, 0, 0.87);
+}
+
+.collapsible {
+  margin: 0px;
+  border: 0px;
+}
+
+.collapsible-header {
+  justify-content: space-between;
+}
+
+.collapsible-header .card-title {
+  margin-left: 0px !important;
+  padding: 0px;
+}
+
+.collapsible-header i {
+  margin: 0;
+}
+
+.contact.container {
+  padding-top: 20px;
 }

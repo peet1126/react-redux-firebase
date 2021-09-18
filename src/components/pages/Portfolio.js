@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
+import Collapsible from "../../Collapsible";
 
 import "../../Styles/Portfolio.css"
 import headShot from "../../img/portfolio/headShot.jpg";
@@ -24,7 +25,8 @@ import gitWhite from "../../img/portfolio/git-white.png";
 import resume from "../../resources/Peter_McDonald_Resume.pdf"
 
 
-const Portfolio = props => {    
+const Portfolio = props => {  
+
     return (
         <div>
             <div className="hero-div">
@@ -52,7 +54,7 @@ const Portfolio = props => {
                             <p>Below is a list of my current technical skills:</p>
                             <br />
                             <div>
-                                <div class="skills list-inline">
+                                <div className="skills list-inline">
                                     <div className="row">
                                         <div className="col s2 l2 xl1 offset-xl3">
                                             <a href="https://en.wikipedia.org/wiki/html5" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={html5} alt="HTML5" title="HTML5" /></a>
@@ -106,57 +108,45 @@ const Portfolio = props => {
                 <h3 className="center-align">Portfolio</h3>
                 <h5 className="center-align">Click on the image to demo the project.</h5>
                 <div className="card-row row">
-                    <div className="col s10 m6 l3 offset-s1">
-                    <Link to="/crypto-calculator">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src={crypto} />
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">Crypto Calculator</span>
-                                <p>The Cryptocurrency Loan Calculator is a React project. Connected to a public API that collects all cryptocurrency's live values, it calculates the amount of cryptocurrency needed to use as collateral for a cash loan.</p>
-                            </div>
+                    <div className="col s12 m6 xl3">
+                        <div className="card">
+                            <Link to="/crypto-calculator">
+                                <div className="card-image">
+                                    <img src={crypto} />
+                                </div>
+                            </Link>
+                            <Collapsible title={"Crypto Calculator"} description={"The Cryptocurrency Loan Calculator is a React project. Connected to a public API that collects all cryptocurrency's live values, it calculates the amount of cryptocurrency needed to use as collateral for a cash loan."}/>   
                         </div>                        
-                    </Link>
                     </div>
-                    <div className="col s10 m6 l3 offset-s1">
-                        <a href="https://experimentzone.com/cro-calculator/" target="blank" rel="noreferrer noopener">
-                            <div class="card">
-                                <div class="card-image">
+                    <div className="col s12 m6 xl3">
+                        <div className="card">
+                            <a href="https://experimentzone.com/cro-calculator/" target="blank" rel="noreferrer noopener">
+                                <div className="card-image">
                                     <img src={experimentZone} />
                                 </div>
-                                <div class="card-content">
-                                    <span class="card-title">Client's Website</span>
-                                    <p>ExperimentZone.com is a client's website that I manage. This site is a fast-loading static website built with Jekyll. The website was built using a theme, but I have torn it apart and rearranged almost every theme page. The site is responsive with many custom features such as calculators. I have integrated our email marketing and meeting scheduling tools so that they work seamlessly for the team.</p>
-                                </div>
-                            </div>                        
-                        </a>
+                            </a>
+                            <Collapsible title={"Client's Website"} description={"ExperimentZone.com is a client's website that I manage. This site is a fast-loading static website built with a Jekyll theme. The site is responsive with many custom features such as calculators."}/>   
+                        </div>                        
                     </div>
-                    <div className="col s10 m6 l3 offset-s1">
-                        <Link to="/about">
-                            <div class="card">
-                                <div class="card-image">
+                    <div className="col s12 m6 xl3">
+                        <div className="card">
+                            <Link to="/about">
+                                <div className="card-image">
                                     <img src={wander} />
                                 </div>
-                                <div class="card-content">
-                                    <span class="card-title">Wander</span>
-                                    <p>This app is a React, Redux, and Firebase project that allows the user to create a post associated with a location on a map and share it with the other logged-in members of the app.</p>
-                                </div>
-                            </div>                        
-                        </Link>
+                            </Link>
+                            <Collapsible title={"Wander"} description={"This app is a React, Redux, and Firebase project that allows the user to create a post associated with a location on a map and share it with the other logged-in members of the app."}/>   
+                        </div>                        
                     </div>
-                    <div className="col s10 m6 l3 offset-s1">
-                        <a href="html/memory-game.html">
-                            <div class="card">
-                                <div class="card-image">
+                    <div className="col s12 m6 xl3">
+                        <div className="card">
+                            <a href="html/memory-game.html">
+                                <div className="card-image">
                                     <img src={memoryGame} />
                                 </div>
-                                <div class="card-content">
-                                    <span class="card-title">Memory Game</span>
-                                    <p>This memory game is a card matching game that is built almost entirely with JavaScript. I created this project as an exercise on DOM manipulation.</p>
-                                </div>
-                            </div>                        
-                        </a>
+                            </a>
+                            <Collapsible title={"Memory Game"} description={"This memory game is a card matching game that is built almost entirely with JavaScript. I created this project as an exercise on DOM manipulation."}/>   
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -165,23 +155,23 @@ const Portfolio = props => {
                 <br />
                 <div className="row center-align">
                     <div className="col s6 m4  center-align">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href="mailto:pbmcdonald7@gmail.com" target="_blank"><i id="contact-icon" class="material-icons">mail_outline</i></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="mailto:pbmcdonald7@gmail.com" target="_blank"><i id="contact-icon" className="material-icons">mail_outline</i></a>
                         <a href="mailto:pbmcdonald7@gmail.com" target="_blank" rel="noreferrer noopener"><p className="center-align">pbmcdonald7@gmail.com</p></a>
                     </div>
                     <div className="col s6 m4 center-align">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><i id="contact-icon" class="material-icons">phone_iphone</i></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">phone_iphone</i></a>
                         <a href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><p className="center-align">(512) 968-1494</p></a>
                     </div>
                     <div className="col s6 m4 center-align">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><img class="li-icon" src={li} alt="LinkedIn Icon" /></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={li} alt="LinkedIn Icon" /></a>
                         <a href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><p className="center-align">View Profile</p></a>
                     </div>
                     <div className="col s6 m4 center-align offset-m2">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><img class="li-icon" src={gitWhite} alt="Github Icon" /></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={gitWhite} alt="Github Icon" /></a>
                         <a href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><p className="center-align">View Profile</p></a>
                     </div>
                     <div className="col s6 m4 center-align offset-s3">
-                        <a id="contact-circle" class="btn-floating btn-large waves-effect waves-light red" href={resume} target="_blank" rel="noreferrer noopener"><i id="contact-icon" class="material-icons">description</i></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href={resume} target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">description</i></a>
                         <a href={resume} target="_blank" rel="noreferrer noopener"><p className="center-align">View Resume</p></a>
                     </div>
                 </div>

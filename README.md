@@ -92,3 +92,5 @@ v30
 `npm run build` creates the build file. Move contents of the build file into the dist file and replace the dist files.
 
 run `firebase deploy`
+
+Messed with set-value package 2.0.1 - 4.0.1
