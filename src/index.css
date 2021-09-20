@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: #f5f5f5;
+  background: #eeeeee;
   background-size: 100%;
   background-position: top;
   height: 100%;
@@ -20,6 +20,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Background Colors */
+.custom-blue {
+  background-color: #05386b;
+}
+.custom-green {
+  background-color: #5cdb95;
+}
+.custom-light-green {
+  background-color: #8ee4af;
+}
+.custom-dark-green {
+  background-color: #379683;
+}
+.custom-white {
+  background-color: #fff;
+}
+/* Custom Text Colors */
+.custom-text-blue {
+  color: #05386b;
+}
+.custom-text-green {
+  color: #5cdb95;
+}
+.custom-text-light-green {
+  color: #8ee4af;
+}
+.custom-text-dark-green {
+  color: #379683;
+}
+.custom-text-white {
+  color: #fff;
 }
 
 .top-header {

@@ -25,7 +25,7 @@ class CreateProject extends Component {
     if (!auth.uid) return <Redirect to="/signin" />;
     return (
       <div className="container">
-        <form onSubmit={this.handleSubmit} className="white">
+        <form onSubmit={this.handleSubmit} className="custom-white">
           <h5 className="grey-text darken-text-3">Create New Project</h5>
           <div className="input-field">
             <label htmlFor="title">Title</label>
@@ -36,7 +36,7 @@ class CreateProject extends Component {
             <input type="text" id="content" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <button className="btn green lighten-2 z-depth-0">Create</button>
+            <button className="btn custom-text-green lighten-2 z-depth-0">Create</button>
           </div>
         </form>
       </div>

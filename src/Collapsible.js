@@ -24,7 +24,7 @@ class Collapsible extends Component {
   render() {
     const { title, description } = this.props
     return (
-      <div className="">
+      <div>
           <ul
             ref={Collapsible => {
               this.Collapsible1 = Collapsible;
@@ -32,7 +32,7 @@ class Collapsible extends Component {
             className="collapsible"
           >
             <li>
-              <div className="collapsible-header valign-wrapper">
+              <div className="collapsible-header valign-wrapper custom-blue custom-text-white">
                 <span className="card-title col l9 xl10">{title}</span><i className="expand material-icons">expand_more</i>
               </div>
               <div className="collapsible-body">

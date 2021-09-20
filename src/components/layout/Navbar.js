@@ -9,7 +9,7 @@ const Navbar = props => {
   // console.log(auth);
   const links = auth.uid ? <SignedInLinks profile={profile}/> : <SignedOutLinks />;
   return (
-    <nav className="nav-wrapper light-green darken-4">
+    <nav className="nav-wrapper custom-blue">
       <div className="container">
         <Link to="/" className="brand-logo">
           Wander

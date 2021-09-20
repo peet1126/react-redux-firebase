@@ -29,11 +29,11 @@ const Portfolio = props => {
 
     return (
         <div>
-            <div className="hero-div">
+            <div className="hero-div custom-text-white">
                 <div className="hero container valign-wrapper">
                     <div className="row">
                         <div className="col center-align">
-                            <h1 className="green-text text-darken-2">Full-Stack Web Developer</h1>
+                            <h1 className="custom-text-green text-darken-2">Full-Stack Web Developer</h1>
                             <h5>with a passion for learning</h5>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ const Portfolio = props => {
                     </div>
                 </div>
             </div>
-            <div className="portfolio container">
+            <div className="portfolio container custom-text-blue">
                 <h3 className="center-align">Portfolio</h3>
                 <h5 className="center-align">Click on the image to demo the project.</h5>
                 <div className="card-row row">
@@ -150,29 +150,29 @@ const Portfolio = props => {
                     </div>
                 </div>
             </div>
-            <div className="contact container">
+            <div className="contact container custom-text-blue">
                 <h3 className="center-align">Contact Me</h3>
                 <br />
                 <div className="row center-align">
                     <div className="col s6 m4  center-align">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="mailto:pbmcdonald7@gmail.com" target="_blank"><i id="contact-icon" className="material-icons">mail_outline</i></a>
-                        <a href="mailto:pbmcdonald7@gmail.com" target="_blank" rel="noreferrer noopener"><p className="center-align">pbmcdonald7@gmail.com</p></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light custom-blue" href="mailto:pbmcdonald7@gmail.com" target="_blank"><i id="contact-icon" className="material-icons">mail_outline</i></a>
+                        <a href="mailto:pbmcdonald7@gmail.com" target="_blank" rel="noreferrer noopener"><p className="center-align custom-text-blue">pbmcdonald7@gmail.com</p></a>
                     </div>
                     <div className="col s6 m4 center-align">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">phone_iphone</i></a>
-                        <a href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><p className="center-align">(512) 968-1494</p></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light custom-blue" href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">phone_iphone</i></a>
+                        <a href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><p className="center-align custom-text-blue">(512) 968-1494</p></a>
                     </div>
                     <div className="col s6 m4 center-align">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={li} alt="LinkedIn Icon" /></a>
-                        <a href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><p className="center-align">View Profile</p></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light custom-blue" href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={li} alt="LinkedIn Icon" /></a>
+                        <a href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><p className="center-align custom-text-blue">View Profile</p></a>
                     </div>
                     <div className="col s6 m4 center-align offset-m2">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={gitWhite} alt="Github Icon" /></a>
-                        <a href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><p className="center-align">View Profile</p></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light custom-blue" href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={gitWhite} alt="Github Icon" /></a>
+                        <a href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><p className="center-align custom-text-blue">View Profile</p></a>
                     </div>
                     <div className="col s6 m4 center-align offset-s3">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href={resume} target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">description</i></a>
-                        <a href={resume} target="_blank" rel="noreferrer noopener"><p className="center-align">View Resume</p></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light custom-blue" href={resume} target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">description</i></a>
+                        <a href={resume} target="_blank" rel="noreferrer noopener"><p className="center-align custom-text-blue">View Resume</p></a>
                     </div>
                 </div>
             </div>
