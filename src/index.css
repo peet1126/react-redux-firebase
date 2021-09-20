@@ -1,3 +1,11 @@
+/* Materialize colors 
+purple - deep-purple darken-1
+green - green accent-3
+dark gray - grey darken-3
+grey text - grey-text text-darken-3
+body background - #f5f5f5
+*/
+
 html,
 body,
 #root,
@@ -62,4 +70,22 @@ textarea.meterialize-textarea:focus:not([readonly]) {
 
 #map {
   height: 100%;
+}
+
+/* Sidenav */
+
+.sidenav .user-view {
+  padding: 16px;
+}
+
+.sidenav .user-view .row {
+  margin-bottom: 0px;
+}
+
+#create-account {
+  margin-left: 0px;
+}
+
+.sidenav .divider {
+  margin: 0px;
 }

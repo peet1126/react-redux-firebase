@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
-import Collapsible from "../../Collapsible";
+import Collapsible from "../../features/Collapsible";
 
 import "../../Styles/Portfolio.css"
 import headShot from "../../img/portfolio/headShot.jpg";
@@ -33,7 +33,7 @@ const Portfolio = props => {
                 <div className="hero container valign-wrapper">
                     <div className="row">
                         <div className="col center-align">
-                            <h1 className="green-text text-darken-2">Full-Stack Web Developer</h1>
+                            <h1 className="text-green accent-3 text-3">Full-Stack Web Developer</h1>
                             <h5>with a passion for learning</h5>
                         </div>
                     </div>
@@ -48,10 +48,13 @@ const Portfolio = props => {
                         </div>
                         <div className="col s12 m7 l7 offset-l1">
                             <h3>About Me</h3>
-                            <p>I have more than two years work experience in front-end and have a firm knowledge of HTML, CSS and JavaScript language and possess a good knowledge of computer software packages (frameworks and tools) that are used in today’s technology.</p>
+                            <p>I have over two years of work experience in front-end development and have a firm knowledge of HTML, CSS, JavaScript, and React. I desire to develop my skills as a full-stack developer. I have been fortunate to gain full-stack experience through my current role, and I have decided that full-stack development is the direction I want to go with my career. I also have significant experience with computer software packages (frameworks and tools) used in today’s technologies.</p>
+                            <p>On a personal level, I am highly motivated, result-oriented, self-driven, hard-working, fast learner, and constantly seeking to improve my skills and am fully aware of the latest Front-end Development Tool.</p>
+                            <p>In addition to this, I have the ability to adapt to any type of team environment. I am team-oriented and get along with others when working in a group setting. I also am capable of working independently while staying on schedule and meeting those tight deadlines.</p>
+                            {/* <p>I have more than two years work experience in front-end and have a firm knowledge of HTML, CSS and JavaScript language and possess a good knowledge of computer software packages (frameworks and tools) that are used in today’s technology.</p>
                             <p>On a personal level, I am highly-motivated, result oriented, self-driven, hard-working, fast learner and constantly seeking to improve my skills and am fully aware of the latest Front-end Development Tools.</p>
                             <p>In addition to this, I have the ability to adapt to any type of team environment, I am team oriented and get along with others when working in a group setting. I also have the ability to work independently while staying on schedule and meeting those tight deadlines.</p>
-                            <p>Below is a list of my current technical skills:</p>
+                            <p>Below is a list of my current technical skills:</p> */}
                             <br />
                             <div>
                                 <div className="skills list-inline">
@@ -155,23 +158,23 @@ const Portfolio = props => {
                 <br />
                 <div className="row center-align">
                     <div className="col s6 m4  center-align">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="mailto:pbmcdonald7@gmail.com" target="_blank"><i id="contact-icon" className="material-icons">mail_outline</i></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light deep-purple darken-1" href="mailto:pbmcdonald7@gmail.com" target="_blank"><i id="contact-icon" className="material-icons">mail_outline</i></a>
                         <a href="mailto:pbmcdonald7@gmail.com" target="_blank" rel="noreferrer noopener"><p className="center-align">pbmcdonald7@gmail.com</p></a>
                     </div>
                     <div className="col s6 m4 center-align">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">phone_iphone</i></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light deep-purple darken-1" href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">phone_iphone</i></a>
                         <a href="tel:+15129681494" target="_blank" rel="noreferrer noopener"><p className="center-align">(512) 968-1494</p></a>
                     </div>
                     <div className="col s6 m4 center-align">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={li} alt="LinkedIn Icon" /></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light deep-purple darken-1" href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={li} alt="LinkedIn Icon" /></a>
                         <a href="https://www.linkedin.com/in/peterbarkermcdonald/" target="_blank" rel="noreferrer noopener"><p className="center-align">View Profile</p></a>
                     </div>
                     <div className="col s6 m4 center-align offset-m2">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={gitWhite} alt="Github Icon" /></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light deep-purple darken-1" href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><img className="li-icon" src={gitWhite} alt="Github Icon" /></a>
                         <a href="https://github.com/peet1126" target="_blank" rel="noreferrer noopener"><p className="center-align">View Profile</p></a>
                     </div>
                     <div className="col s6 m4 center-align offset-s3">
-                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light red" href={resume} target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">description</i></a>
+                        <a id="contact-circle" className="btn-floating btn-large waves-effect waves-light deep-purple darken-1" href={resume} target="_blank" rel="noreferrer noopener"><i id="contact-icon" className="material-icons">description</i></a>
                         <a href={resume} target="_blank" rel="noreferrer noopener"><p className="center-align">View Resume</p></a>
                     </div>
                 </div>

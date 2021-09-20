@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const SignedOutLinks = () => {
   return (
-    <ul className="right">
+    <ul className="right hide-on-med-and-down">
       <li>
-        <NavLink to="/portfolio">Portfolio</NavLink>
+        <NavLink to="/portfolio">Developer's Portfolio</NavLink>
       </li>
       <li>
         <NavLink to="/about">About This App</NavLink>

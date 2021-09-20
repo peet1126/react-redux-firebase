@@ -46,7 +46,7 @@ class SignUp extends Component {
             <input type="password" id="password" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <button className="btn green lighten-2 z-depth-0">Sign Up</button>
+            <button className="btn green accent-3 grey-text text-darken-3 z-depth-0">Sign Up</button>
             {/* <div className="red-text center">
               {authError ? <p>{authError}</p> : null}
             </div> */}

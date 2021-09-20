@@ -283,7 +283,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .calculator-layout {
-  padding: 30px 60px;
+  padding: 12%;
 }
 
 .calculator-details h4 {
@@ -351,13 +351,33 @@ input[type="range"]:focus::-ms-fill-upper {
 
 /* Responsive styles  */
 
+@media screen and (max-width: 399px) {
+  .title {
+    font-size: 2rem;
+  }
+  .radio-div label {
+    padding: 10px 1.5%;
+  }
+  #amount {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .calculator-layout {
+    padding: 8%;
+  }
+
+  .crypto-amount {
+    width: min-content;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .calculator {
     display: contents;
   }
 
   .loan-calculator {
-    width: 400px;
+    width: 95%;
   }
 
   .calculator-form,

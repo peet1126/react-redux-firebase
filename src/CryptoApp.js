@@ -1,12 +1,12 @@
 import React from "react"
-import './Styles/CryptoApp.css';
+import Styles from './Styles/CryptoApp.css';
 import LoanCalculator from './components/CryptoComponents/LoanCalculator';
 
 function CryptoApp() {
   return (
-    <div className="crypto-app">
-      <LoanCalculator />
-    </div>
+      <div className="cryptoApp">
+        <LoanCalculator />
+      </div>
   );
 }
 
