@@ -59,44 +59,44 @@ const Portfolio = props => {
                             <div>
                                 <div className="skills list-inline">
                                     <div className="row">
-                                        <div className="col s2 l2 xl1 offset-xl3">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://en.wikipedia.org/wiki/html5" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={html5} alt="HTML5" title="HTML5" /></a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={css3} alt="CSS3" title="CSS3" /></a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={js} alt="JavaScript" title="JavaScript" /></a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={react} alt="React" title="React" /></a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://graphql.org/" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={graphql} alt="GraphQL" title="GraphQL" /></a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"><img className="responsive-img" src={sass} alt="Sass" title="Sass" /></a>
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col s2 l2 xl1 offset-xl3">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://materializecss.com/" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={materialize} alt="Materialize" title="Materialize" /></a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={bootstrap} alt="Bootstrap" title="Bootstrap" /></a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={webpack} alt="Webpack" title="Webpack" />
                                             </a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={sql} alt="SQL" title="SQL" /></a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={git} alt="Git" title="Git" />
                                             </a>
                                         </div>
-                                        <div className="col s2 l2 xl1">
+                                        <div className="col s2 l2 xl2">
                                             <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer"><img className="responsive-img" src={firebase} alt="Firebase" title="Firebase" />
                                             </a>
                                         </div>
