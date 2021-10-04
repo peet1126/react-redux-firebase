@@ -33,7 +33,7 @@ const Portfolio = props => {
                 <div className="hero container valign-wrapper">
                     <div className="row">
                         <div className="col center-align">
-                            <h1 className="text-green accent-3 text-3">Full-Stack Web Developer</h1>
+                            <h1 className="text-green accent-3 text-3">Front-End Web Developer</h1>
                             <h5>with a passion for learning</h5>
                         </div>
                     </div>
